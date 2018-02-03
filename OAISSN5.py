@@ -1,5 +1,4 @@
-email = "" #Please enter your email here in between the quotes. This is so the Crossref and OADOI know who is making use of their APIs.
-
+email = "" #Please entry your email here in between the quotes. This is so the Crossref and OADOI know who is making use of their APIs.
 import urllib.request, urllib.parse, urllib.error
 import json
 import ssl
@@ -165,7 +164,7 @@ while True:
     #print (DOI_year_list)
     #break
 
-    oadoi_serviceurl = 'https://api.oadoi.org/v2/'
+    oadoi_serviceurl = 'https://api.unpaywall.org/v2/'
     oa_count = 0
     doi_error_count = 0
     doi_info = dict()
@@ -224,7 +223,7 @@ while True:
             #print ('DOI causing the error is:', uh)
             doi_error_count = doi_error_count + 1
             if OA_export == "y":
-                doi_info[doi]={"OA" : "DOI Error",
+                doi_info[doi]={"OA" : "DOI Error. Unpaywall can not regonize this DOI",
                                 "Genre":" ",
                                 "Version":" ",
                                 "Host Type":" ",
