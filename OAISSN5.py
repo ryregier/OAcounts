@@ -1,4 +1,5 @@
-email = "" #Please entry your email here in between the quotes. This is so the Crossref and OADOI know who is making use of their APIs.
+email = "" #Please enter your email here in between the quotes. This is so the Crossref and OADOI know who is making use of their APIs.
+
 import urllib.request, urllib.parse, urllib.error
 import json
 import ssl
