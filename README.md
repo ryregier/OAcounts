@@ -1,2 +1,3 @@
 # OAcounts
-Attempting to use open access analytic services to acquire data on how much of a journal is open access and what kind of open access it is
+
+This python code makes use of the free [Crossref Rest API] (https://www.crossref.org/services/metadata-delivery/rest-api/) and the free [Unpaywall Rest API] (http://unpaywall.org/api/v2) 
