@@ -16,7 +16,7 @@ Your email is required so that Crossref and Unpaywall can keep an idea how their
 
 If don't add you email to the first line, the program will not run, so be sure to do this.
 
-The first prompt when your run the program will be to enter a journal ISSN:
+The first prompt when you run the program will be to enter a journal ISSN:
   >Enter a journal ISSN. Make sure to include the dash:
 
 Any ISSN attached to the journal should work. It does not matter if it is a online or print ISSN. OAISSN.py will quickly check to see if this journal is registered in Crossref via the Crossref API. If it can not find the journal, it will prompt you to re-enter. Crossref indexes most journals, but not all of them. It's possible the journal you search for is not indexed in Crossref.
@@ -49,7 +49,7 @@ https://doi.org/10.11... | Y | journal-article | publishedVersion | repository |
 https://doi.org/10.12... |  | journal-article |  |  | 
 https://doi.org/10.12... | DOI Error... | journal-article |  |  |
 
-If the article is not OA then the OA? value will remain blank. Sometimes the Unpaywall DOI can not regonize Crossref DOIs. This can be an error with the DOI or with Unpaywall. If this happens a "DOI Error. Unpaywall can not regonize this DOI" will appear as the OA? value.
+If the article is not OA then the "OA?" value will remain blank. Sometimes the Unpaywall DOI can not regonize Crossref DOIs. This can be an error with the DOI or with Unpaywall. If this happens a "DOI Error. Unpaywall can not regonize this DOI" will appear as the "OA?" value.
 
 The open access version returned is the Unpaywall's "best OA location". How this is determined can be found on [their website](http://unpaywall.org/api/v2):
 >The "best" location is determined using an algorithm that prioritizes publisher-hosted content first (eg Hybrid or Gold), then prioritizes versions closer to the version of record (PublishedVersion over AcceptedVersion), then more authoritative repositories (PubMed Central over CiteSeerX).
@@ -69,7 +69,7 @@ If you enter y to export the csv file it will tell you the csv file has been exp
 
 ## Potential Errors and Concerns
 
-If you do enter the ISSN for an open access journal, OAISSN.py will run you through the first couple steps, till it begins to check the DOIs in Unpaywall. It will then exit the analysis and let you know the journal is an open acces journal:
+If you do enter the ISSN for an open access journal, OAISSN.py will run you through the first couple steps, till it begins to check the DOIs in Unpaywall. It will then exit the analysis and let you know the journal is an open access journal:
    >College and Research Libraries is an Gold Open Access Journal! All DOIs are open!
    
 Crossref and Unpaywall can time out on occasion. If you keep getting errors and it seems like it should be working, please wait an hour or so before trying again. If it's still not working, please let me know! It may be bad code. 
@@ -79,6 +79,8 @@ I have noticed that just because a DOI is registered with Crossref, it does not 
 ## What is OAISSN for?
 
 I'm hoping it can be a tool for librarians evaluating their journal subscriptions and can help them create a open access adjusted cost per use. It could also be used by journal editors who want to see where researchers are depositing green OA copies of their articles.
+
+It could also be used to get an idea what % of a journal is being published Hybrid OA or what % is being deposited in repositories.
 
 
 
